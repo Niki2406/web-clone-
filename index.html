@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone 1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Open+Sans:wght@300&family=Poppins:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+
+</head>
+
+<body>
+
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>
+                CLEAN AND FLEXIBLE TEMPLATE
+            </h1>
+            <a href="" class="hero-btn">DOWNLOAD</a>
+            <a href="" class="hero-btn2">VIEW FEATURES</a>
+
+        </div>
+    </section>
+    <!---About section-->
+    <section class="about">
+        <h3>ABOUT US</h3>
+        <p class="about_dis">Setibulum rutrum quam vitae fringilla tincidunt</p>
+        <div class="Ab1">
+            <img class="pic1" src="images/image2.jpg">
+
+            <div class="ab1">
+                <p>"Lorem ipsum dolor sitamet, consectetur adipisicing elit, seddo eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quisus nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum."
+                    <br>
+                    <br>
+                    Excepteur sint occaecat cupidatat none proident, sunt in culpa qui officia deserunt mollit anim id
+                    est laborum voluptate dolor.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--Portfolio section-->
+    <section class="portfolio">
+        <h3>PORTFOLIO</h3>
+        <P>An eye for detail makes our work beautiful</P>
+        <br>
+        <br>
+        <div class="row">
+            <div class="port-col">
+                <img src="images/image3.jpeg">
+                <div class="layer">
+                    <h3>PRINT DESIGN</h3>
+                </div>
+            </div>
+            <div class="port-col">
+                <img src="images/image4.jpeg">
+                <div class="layer">
+                    <h3>GRAPHIC DESIGN</h3>
+                </div>
+            </div>
+            <div class="port-col">
+                <img src="images/image5.jpeg">
+                <div class="layer">
+                    <h3>MOBILE APP</h3>
+                </div>
+            </div>
+            <div class="port-col">
+                <img src="images/image6.jpeg">
+                <div class="layer">
+                    <h3>3D DRAWING</h3>
+                </div>
+            </div>
+            <div class="port-col">
+                <img src="images/image7.jpeg">
+                <div class="layer">
+                    <h3>INTERIOR DESIGN</h3>
+                </div>
+            </div>
+            <div class="port-col">
+                <img src="images/image8.jpeg">
+                <div class="layer">
+                    <h3>UX DESIGN</h3>
+                </div>
+            </div>
+            <div class="port-col">
+                <img src="images/image9.jpeg">
+                <div class="layer">
+                    <h3>WEB DESIGN</h3>
+                </div>
+            </div>
+            <div class="port-col">
+                <img src="images/image10.jpeg">
+                <div class="layer">
+                    <h3>HOME DESIGN</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--PROJCT SECTION-->
+    <section Class="project">
+        <h3>
+            Have project in mind
+        </h3>
+        <br>
+        <br>
+        <a href="" class="contact">CONTACT</a>
+        <section class="test"></section>
+        <br>
+        <br>
+        <div class="ts">
+        <h2>TESTMONIALS</h2>
+        <P>
+            It really saves me time and effort. web design is exactly what our business has been lacking. Duis cursus,
+            mi quis<br> viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus
+            nibh et justo cursus id<br> rutrum lorem imperdiet. Nunc ut sem risus tristique posuere.
+        </P>
+        </div>
+    </section>
+    <!---java script-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0px";
+        }
+        function hidemenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+
+</html>

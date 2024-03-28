@@ -1,0 +1,262 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+.header{
+    min-height:100vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/image1.jpg.jpg);
+    background-position:center;
+    background-size: cover;
+    position:relative;
+}
+nav{
+    display:flex;
+    padding:2% 6%;
+    justify-content: space-between;
+    align-items:center;
+
+}
+nav img{
+    width:150px;
+}
+.nav-links{
+    flex:1;
+    text-align:right;
+
+}
+.nav-links ul li{
+    list-style:none;
+    display:inline-block;
+    padding:8px 12px;
+    position:relative;
+
+}
+.nav-links ul li a{
+    color:#fff;
+    text-decoration: none;
+    font-size:13px ;
+}
+.nav-links ul li::after{
+    content:'';
+    width:0%;
+    height:2px;
+    background:#f44336;
+    display:block;
+    margin:auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width:100%;
+
+}
+.text-box{
+    width:90%;
+    color:#fff;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,50%);
+    text-align:center;
+    font-weight: bolder;
+    
+
+}
+.text-box h1{
+    font-size:62px;
+}
+.hero-btn{
+    display:inline-block;
+    text-decoration:none;
+    color:#fff;
+    border-radius: 8px;
+    padding:12px 34px;
+    font-size:17px;
+    background-color: blue;
+    font-weight: lighter;
+    cursor:pointer;
+    position:relative;
+}
+.hero-btn:hover{
+    border:none;
+    background:transparent;
+    transition: 1s;
+
+}
+
+.hero-btn2{
+    size: 5px;
+    display:inline;
+    text-decoration: none;
+    background-color: transparent;
+    color:white;
+    font-size:17px ;
+    margin-left: 60px;
+    padding: 12px 12px;
+    border:1px solid blue !important;
+    border-radius: 8px;
+    font-weight: lighter;
+    cursor:pointer;
+    position: relative;
+}
+.hero-btn2:hover{
+    border:blue;
+    background: blue;
+    transition: 1s;
+}
+nav .fa{
+    display:none;
+}
+
+@media(max-width:700px){
+    .text-box h1{
+        font-size:20px;
+    }
+    .nav-links ul li {
+        display:block;
+
+    }
+    .nav-links{
+        position:absolute;
+        background: blue;
+        height:100vh;
+        width:200px;
+        top:0;
+        right:-200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    .hero-btn2{
+        display:inline-block;
+        margin-top: 20px ;
+        margin-left: 20px;
+        align-content:left;
+    }
+    nav .fa{
+        display : block;
+        color:#fff;
+        margin: 10px;
+        cursor:pointer;
+        font-size:22px;
+        
+    }
+    .nav-links ul{
+        padding:30px;
+    }
+}
+.about{
+    width:80%;
+    margin:auto;
+    text-align:center;
+    padding-top:100px;
+
+}
+h3{
+    font-size:36px;
+    font-weight: 600;
+
+}
+.about_dis{
+    font-style: italic;
+    color:black;
+    font-size:14px;
+    font-weight:300;
+    line-height:22px;
+    padding:10px;
+}
+.Ab1{
+    text-align:left;
+    line-height:2;
+}
+.ab1{
+    font-style:normal;
+    padding:10px;
+}
+    
+.pic1{
+     float: right;
+}
+.portfolio{
+    width:80%;
+    margin:auto;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-top:100px;
+    font-style: italic;
+}
+p{
+    padding:20px;
+}
+.row{
+    
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    
+}
+.port-col{
+    position:relative ;
+    overflow:hidden;
+}
+.port-col img{
+    padding:20px;
+    display: block;
+    width:100%;
+    object-fit:cover;
+    object-position:center;
+    
+}
+.layer{
+    width:100%;
+    background: transparent ;
+   top:0;
+   bottom:0;
+    position:absolute;
+    transition: 0.5s;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.layer:hover{
+    background: lightblue;
+}
+.project{
+    width:80%;
+    margin:auto;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-top:100px;
+    font-style: italic;
+}
+.contact{
+    size: 5px;
+    display:inline;
+    text-decoration: none;
+    background-color: transparent;
+    
+    font-size:17px ;
+    
+    padding: 12px 20px;
+    border:1px solid blue !important;
+    border-radius: 8px;
+    font-weight: lighter;
+    cursor:pointer;
+    position: relative;
+}
+.contact:hover{
+    border:lightblue;
+    background:lightblue;
+    transition: 1s;
+}
+.ts{
+    margin-top: 10px;
+    padding-top: 30px;
+    background-color:lightblue;
+    min-height:30vh;
+    width:100%;
+    background-position:center;
+    background-size: cover;
+    position:relative;
+}
